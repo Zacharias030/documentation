@@ -12,7 +12,11 @@ To connect to your Pi from a different computer, copy and paste the following co
 ssh pi@<IP>
 ```
 
-If you receive a `connection timed out` error it's likely that you've entered the wrong IP address for the Raspberry Pi.
+If you receive a `connection timed out` error it's likely that you've entered the wrong IP address for the Raspberry Pi. Please try using the verbose mode of ssh to be able to input the password:
+
+```
+ssh -v pi@<IP>
+```
 
 When the connection works you'll see a security/authenticity warning. Type `yes` to continue. You'll only see this warning the first time you connect.
 
